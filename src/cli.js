@@ -9,3 +9,7 @@ export function askForName() {
 export function greet(name) {
   console.log(`Hello, ${name}!`);
 }
+
+export function welcome() {
+  console.log("Welcome to the Brain Games!");
+}

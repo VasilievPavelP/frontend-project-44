@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { askForName, greet, welcome } from "../src/cli.js";
-import playUpTo from "../src/even-game.js";
+import playUpTo from "../src/calc-game.js";
 
 welcome();
 

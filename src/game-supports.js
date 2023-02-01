@@ -34,12 +34,15 @@ export function reportCombine(isCorrect, answer, correctAnswer, name) {
 
 export function gameCombine(num, name, rules, game) {
   tellTheRules(rules);
-  const correctAnswer = [];
+  const correctAnswers = [];
 
-  while (correctAnswer.length !== num) {
-    const answer = game();
-    if (answer) {
-      correctAnswer.push("win");
+  while (correctAnswers.length !== num) {
+    const [isCorrect, answer, correctAnswer] = game();
+
+    reportCombine(isCorrect, answer, correctAnswer, name);
+
+    if (isCorrect) {
+      correctAnswers.push("win");
     }
   }
   reportAVictory(name);

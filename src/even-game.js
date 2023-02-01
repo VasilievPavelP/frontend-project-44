@@ -1,11 +1,6 @@
-import {
-  askQuestion,
-  gameCombine,
-  getAnswer,
-  reportCombine,
-} from "./game-supports.js";
+import { askQuestion, gameCombine, getAnswer } from "./game-supports.js";
 
-function game(name) {
+function game() {
   const randomNumber = Math.floor(Math.random() * 100) + 1;
 
   askQuestion(randomNumber);
@@ -16,13 +11,11 @@ function game(name) {
 
   const isCorrect = answer.trim() === correctAnswer;
 
-  reportCombine(isCorrect, answer, correctAnswer, name);
-
-  return isCorrect;
+  return [isCorrect, answer, correctAnswer];
 }
 
 export default function playUpToEven(num, name) {
   const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  gameCombine(num, name, rules, () => game(name));
+  gameCombine(num, name, rules, game);
 }
