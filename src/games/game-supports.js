@@ -41,6 +41,10 @@ export function gameCombine(num, name, rules, game) {
 
     reportCombine(isCorrect, answer, correctAnswer, name);
 
+    if (!isCorrect) {
+      return;
+    }
+
     if (isCorrect) {
       correctAnswers.push("win");
     }
