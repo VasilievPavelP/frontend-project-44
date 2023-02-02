@@ -1,4 +1,4 @@
-import { askQuestion, gameCombine, getAnswer } from "./game-supports.js";
+import { askQuestion, gameCombine, getAnswer } from './game-supports.js';
 
 function calculateGCD(a, b) {
   const min = Math.min(a, b);
@@ -28,7 +28,7 @@ function game() {
 }
 
 export default function playUpToGCD(num, name) {
-  const rules = "Find the greatest common divisor of given numbers.";
+  const rules = 'Find the greatest common divisor of given numbers.';
 
   gameCombine(num, name, rules, game);
 }

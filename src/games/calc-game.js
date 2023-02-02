@@ -1,20 +1,20 @@
-import { askQuestion, gameCombine, getAnswer } from "./game-supports.js";
+import { askQuestion, gameCombine, getAnswer } from './game-supports.js';
 
 function calculate(operand, a, b) {
-  if (operand === "+") {
+  if (operand === '+') {
     return a + b;
   }
-  if (operand === "-") {
+  if (operand === '-') {
     return a - b;
   }
-  if (operand === "*") {
+  if (operand === '*') {
     return a * b;
   }
   return undefined;
 }
 
 function game() {
-  const operands = ["+", "-", "*"];
+  const operands = ['+', '-', '*'];
   const randomOperation = Math.floor(Math.random() * 3);
   const randomFirstNumber = Math.floor(Math.random() * 100) + 1;
   const randomSecondNumber = Math.floor(Math.random() * 100) + 1;
@@ -36,7 +36,7 @@ function game() {
 }
 
 export default function playUpToCalc(num, name) {
-  const rules = "What is the result of the expression?";
+  const rules = 'What is the result of the expression?';
 
   gameCombine(num, name, rules, game);
 }

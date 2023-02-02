@@ -1,4 +1,4 @@
-import { askQuestion, gameCombine, getAnswer } from "./game-supports.js";
+import { askQuestion, gameCombine, getAnswer } from './game-supports.js';
 
 function game() {
   const randomNumber = Math.floor(Math.random() * 10) + 1;
@@ -7,7 +7,7 @@ function game() {
 
   const answer = getAnswer();
 
-  const correctAnswer = randomNumber % 2 === 0 ? "yes" : "no";
+  const correctAnswer = randomNumber % 2 === 0 ? 'yes' : 'no';
 
   const isCorrect = answer === correctAnswer;
 

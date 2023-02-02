@@ -1,4 +1,4 @@
-import { askQuestion, gameCombine, getAnswer } from "./game-supports.js";
+import { askQuestion, gameCombine, getAnswer } from './game-supports.js';
 
 function generateProgression(progLength, missingItem, progStep) {
   const progArray = [];
@@ -8,13 +8,13 @@ function generateProgression(progLength, missingItem, progStep) {
 
     if (i === missingItem) {
       correctAnswer = currentStep;
-      progArray.push("..");
+      progArray.push('..');
     } else {
       progArray.push(currentStep);
     }
   }
 
-  const progArrayToString = progArray.join(" ");
+  const progArrayToString = progArray.join(' ');
 
   return [progArrayToString, correctAnswer];
 }
@@ -39,7 +39,7 @@ function game() {
 }
 
 export default function playUpToProgression(num, name) {
-  const rules = "What number is missing in the progression?";
+  const rules = 'What number is missing in the progression?';
 
   gameCombine(num, name, rules, game);
 }

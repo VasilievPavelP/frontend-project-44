@@ -1,17 +1,17 @@
-import { askQuestion, gameCombine, getAnswer } from "./game-supports.js";
+import { askQuestion, gameCombine, getAnswer } from './game-supports.js';
 
 function checkPrimeNumber(number) {
   if (number === 1) {
-    return "no";
+    return 'no';
   }
 
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
-      return "no";
+      return 'no';
     }
   }
 
-  return "yes";
+  return 'yes';
 }
 
 function game() {

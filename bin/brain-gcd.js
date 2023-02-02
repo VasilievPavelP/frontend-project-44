@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { askForName, greet, welcome } from "../src/cli.js";
-import playUpToGCD from "../src/games/gcd-game.js";
+import { askForName, greet, welcome } from '../src/cli.js';
+import playUpToGCD from '../src/games/gcd-game.js';
 
 welcome();
 

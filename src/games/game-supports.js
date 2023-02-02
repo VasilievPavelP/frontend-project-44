@@ -1,7 +1,7 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 function reportACorrectAnswer() {
-  console.log("Correct!");
+  console.log('Correct!');
 }
 
 function reportAWrongAnswer(answer, correctAnswer, name) {
@@ -11,7 +11,7 @@ function reportAWrongAnswer(answer, correctAnswer, name) {
 }
 
 export function getAnswer() {
-  return readlineSync.question("Your answer: ");
+  return readlineSync.question('Your answer: ');
 }
 
 function tellTheRules(rules) {
@@ -46,7 +46,7 @@ export function gameCombine(num, name, rules, game) {
     }
 
     if (isCorrect) {
-      correctAnswers.push("win");
+      correctAnswers.push('win');
     }
   }
   reportAVictory(name);
