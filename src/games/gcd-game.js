@@ -27,7 +27,7 @@ function game() {
   return [isCorrect, answer, correctAnswer];
 }
 
-export default function playUpToCalc(num, name) {
+export default function playUpToGCD(num, name) {
   const rules = "Find the greatest common divisor of given numbers.";
 
   gameCombine(num, name, rules, game);
