@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { askForName, greet, welcome } from "../src/cli.js";
-import playUpToCalc from "../src/games/calc-game.js";
+import playUpToGCD from "../src/games/gcd-game.js";
 
 welcome();
 
@@ -9,4 +9,4 @@ const name = askForName();
 
 greet(name);
 
-playUpToCalc(3, name);
+playUpToGCD(3, name);

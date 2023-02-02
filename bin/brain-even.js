@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { askForName, greet, welcome } from "../src/cli.js";
-import playUpTo from "../src/even-game.js";
+import playUpToEven from "../src/games/even-game.js";
 
 welcome();
 
@@ -9,4 +9,4 @@ const name = askForName();
 
 greet(name);
 
-playUpTo(3, name);
+playUpToEven(3, name);

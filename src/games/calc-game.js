@@ -35,7 +35,7 @@ function game() {
   return [isCorrect, answer, correctAnswer];
 }
 
-export default function playUpToEven(num, name) {
+export default function playUpToCalc(num, name) {
   const rules = "What is the result of the expression?";
 
   gameCombine(num, name, rules, game);
